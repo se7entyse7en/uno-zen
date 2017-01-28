@@ -22,7 +22,3 @@ $ ->
       location.hash = if location.hash is '' then '#open' else ''
       return $('#menu-button').trigger 'click' unless Uno.is 'device', 'desktop'
       _expand form: 'toggle'
-
-  if (Uno.is 'device', 'desktop') and (Uno.is 'page', 'home')
-    _animate()
-    _expand form: 'hide' if !isOpen
