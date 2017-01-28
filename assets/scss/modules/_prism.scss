@@ -42,10 +42,15 @@ pre[class*="language-"] {
 }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
-	white-space: normal;
+:not(pre) > code {
+        padding: .2rem .3rem .1rem;
+        border: 1px solid #d8e0e4;
+        border-radius: 2px;
+        color: #c25;
+        vertical-align: middle;
+        white-space: pre-wrap;
+        font-size: .9em;
+        line-height: 1em;
 }
 
 .token.comment,
