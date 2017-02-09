@@ -178,24 +178,44 @@ main {
 
   padding: 2rem 3rem;
 
+  @media only screen and (max-width: 480px) {
+      > .content {
+          padding: 2rem 0;
+          margin: 0 2rem 0 3.2rem;
 
+          > h1 {
+              margin-bottom: 2.7rem;
+          }
+          > footer {
+              display: block;
+              padding: 2em 0 0;
 
-  > .content {
-    padding: 2rem 0;
-    margin: 0 3.7rem;
+              font-size: .7em;
 
-    > h1 {
-      margin-bottom: 2.7rem;
-    }
-    > footer {
-      display: block;
-      padding: 2em 0 0;
+              color: lighten($gray-dark, 10%);
+              border-top: 2px solid $gray-light;
+          }
+      }
+  }
 
-      font-size: .7em;
+  @media only screen and (min-width: 481px) {
+      > .content {
+          padding: 2rem 0;
+          margin: 0 3.7rem;
 
-      color: lighten($gray-dark, 10%);
-      border-top: 2px solid $gray-light;
-    }
+          > h1 {
+              margin-bottom: 2.7rem;
+          }
+          > footer {
+              display: block;
+              padding: 2em 0 0;
+
+              font-size: .7em;
+
+              color: lighten($gray-dark, 10%);
+              border-top: 2px solid $gray-light;
+          }
+      }
   }
 }
 
